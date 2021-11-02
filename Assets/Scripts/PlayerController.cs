@@ -28,16 +28,16 @@ public class PlayerController : MonoBehaviour {
         //if (!countdownRunning)
         //{
             //wenn timer läuft (fängt an zu laufen wenn startcountdown abgelaufen ist--> für 3, 2, 1 also false)
-            if(_timerScript.timerIsRunning){
+           //if(_timerScript.timerIsRunning){
                 if (count < 12)
                 {
                      SetPlayerMovement();
                 } else {
 
                 }
-            } else if (_timerScript.timerEnded){
-                winOrLoseText.text = "You Lose This Time... Try Again!";       
-            }
+           // } else if (_timerScript.timerEnded){
+           //     winOrLoseText.text = "You Lose This Time... Try Again!";       
+            //}
         //} else {}
         
     }
@@ -81,7 +81,7 @@ public class PlayerController : MonoBehaviour {
         SetCountText ();
         winOrLoseText.text = "";
         
-        _timerScript = timer.GetComponent<Timer>();
+        //_timerScript = timer.GetComponent<Timer>();
     }
 
     void SetPlayerMovement ()
